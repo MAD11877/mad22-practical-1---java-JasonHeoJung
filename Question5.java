@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Question5
 {
@@ -25,8 +26,16 @@ public class Question5
      *     2
      * Hint: Use a loop to get input. Use another 2 loops to find the mode
      */
-     
     Scanner in = new Scanner(System.in);
-    
+    ArrayList<Integer> numbers = new ArrayList<>();
+    System.out.print("No. of numbers: ");
+    int count = in.nextInt();
+    for (int i = count; i > 0; i--)
+    {
+      System.out.print("No. of numbers: ");
+      int num = in.nextInt();
+      numbers.add(num);
+    }
+    for (int i = numbers.size(); )
   }
 }
