@@ -28,7 +28,7 @@ public class Question5
      */
     Scanner in = new Scanner(System.in);
     ArrayList<Integer> numbers = new ArrayList<>();
-    System.out.print("No. of numbers: ");
+    System.out.print(">");
     int count = in.nextInt();
     for (int i = count; i > 0; i--)
     {
@@ -52,6 +52,6 @@ public class Question5
           }
       }
     }
-    System.out.print("Mode: "+ mode);
+    System.out.print(mode);
   }
 }
