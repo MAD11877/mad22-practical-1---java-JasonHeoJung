@@ -11,10 +11,9 @@ public class Question3
      */
      
     Scanner in = new Scanner(System.in);
-    System.out.print("Enter Number: ");
     int num = in.nextInt();
     int mult = num * num;
-    System.out.print("Result: "+mult);
+    System.out.print(mult);
 
   }
 }
