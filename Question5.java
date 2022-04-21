@@ -28,11 +28,9 @@ public class Question5
      */
     Scanner in = new Scanner(System.in);
     ArrayList<Integer> numbers = new ArrayList<>();
-    System.out.print(">");
     int count = in.nextInt();
     for (int i = count; i > 0; i--)
     {
-      System.out.print(">");
       int num = in.nextInt();
       numbers.add(num);
     }
