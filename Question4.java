@@ -17,7 +17,6 @@ public class Question4
      * Hint: 2 loops are required. System.out.print(...) to print on single line.
      */
     Scanner in = new Scanner(System.in);
-    System.out.print("Enter base length: ");
     int base = in.nextInt();
     for (int i = base; i >= 1 ; i--)
     {
