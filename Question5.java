@@ -32,10 +32,26 @@ public class Question5
     int count = in.nextInt();
     for (int i = count; i > 0; i--)
     {
-      System.out.print("No. of numbers: ");
+      System.out.print(">");
       int num = in.nextInt();
       numbers.add(num);
     }
-    for (int i = numbers.size(); )
+    int mode = numbers.get(0);
+    int maxCount = 0;
+    for (int i = 0; i < numbers.size(); i++) 
+    {
+      int value = numbers.get(i);
+      int counter = 0;
+      for (int j = 0; j < numbers.size(); j++) 
+      {
+          if (numbers.get(j) == value) counter++;
+          if (counter > maxCount) 
+          {
+              mode = value;
+              maxCount = counter;
+          }
+      }
+    }
+    System.out.print("Mode: "+ mode);
   }
 }
